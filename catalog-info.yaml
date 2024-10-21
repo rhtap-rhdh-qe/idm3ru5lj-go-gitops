@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: idm3ru5lj-go-gitops
+  description: This is GitOps manifest for idm3ru5lj-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: idm3ru5lj-go
+    janus-idp.io/tekton: idm3ru5lj-go
+    backstage.io/kubernetes-id: idm3ru5lj-go 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:idm3ru5lj-go

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: idm3ru5lj-go-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/idm3ru5lj-go-gitops
